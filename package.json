@@ -1,0 +1,22 @@
+{
+  "name": "testing-saucedemo-e2e",
+  "version": "1.0.0",
+  "description": "E2E test automation for saucedemo.com using Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reza-Vahed/testing-saucedemo-e2e.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reza-Vahed/testing-saucedemo-e2e/issues"
+  },
+  "homepage": "https://github.com/Reza-Vahed/testing-saucedemo-e2e#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1"
+  }
+}
