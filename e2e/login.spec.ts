@@ -26,4 +26,14 @@ test.describe("SauceDemo Login", () => {
 
     await expect(page).not.toHaveURL(/.*inventory.html/);
   });
+
+  test("Login: Fehlermeldung bei leeren Feldern", async ({ page }) => {
+    await page.getByRole("button", { name: "Login" }).click();
+
+    await expect(
+      page.getByText("Epic sadface: Username is required"),
+    ).toBeVisible();
+
+    await expect(page).not.toHaveURL(/.*inventory.html/);
+  });
 });
